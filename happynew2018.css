@@ -671,6 +671,34 @@ ul {
     border-radius: 100px;
 }
 
+/*counter*/
+
+.c-counter {
+  border-radius: .2rem;
+  border: 1px solid #9b9696;
+  font-family: "PT Serif Caption";
+  position: relative;
+  font-size: 0; }
+  .c-counter__field {
+    border: none;
+    background-color: #fff;
+    outline: none;
+    text-align: center;
+    display: inline-block;
+    width: 50% !important; }
+  .c-counter__btn {
+    font-size: 1.2rem;
+    color: #555451;
+    display: inline-block;
+    padding: .4rem 0;
+    text-align: center;
+    width: 25%;
+    cursor: pointer; }
+  .c-counter .dec {
+    left: .6rem; }
+  .c-counter .inc {
+    right: .6rem; }
+
 @-webkit-keyframes slide-down {
     0% {
         -webkit-transform: translateY(-100%);
