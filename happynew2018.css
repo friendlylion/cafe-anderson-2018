@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'Myriad Pro';
-    src: url('../fonts/MyriadPro-Regular.eot');
-    src: local('../fonts/Myriad Pro Regular'), local('../fonts/MyriadPro-Regular'),
-    url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MyriadPro-Regular.woff') format('woff'),
-    url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+    src: url('./fonts/MyriadPro-Regular.eot');
+    src: local('./fonts/Myriad Pro Regular'), local('./fonts/MyriadPro-Regular'),
+    url('./fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/MyriadPro-Regular.woff') format('woff'),
+    url('./fonts/MyriadPro-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SummerFont';
-    src: url('../fonts/SummerFont-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/SummerFont-Light.woff') format('woff'), url('../fonts/SummerFont-Light.ttf') format('truetype'), url('../fonts/SummerFont-Light.svg#SummerFont-Light') format('svg');
+    src: url('./fonts/SummerFont-Light.eot?#iefix') format('embedded-opentype'), url('./fonts/SummerFont-Light.woff') format('woff'), url('./fonts/SummerFont-Light.ttf') format('truetype'), url('./fonts/SummerFont-Light.svg#SummerFont-Light') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -68,7 +68,7 @@ ul {
 }
 
 .header {
-    background: url(../img/bg-header.jpg) 50% 50% no-repeat;
+    background: url(./img/bg-header.jpg) 50% 50% no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     margin-bottom: 36px;
@@ -79,13 +79,26 @@ ul {
     text-align: justify;
     font-size: 0;
     padding: 50px 46px 46px;
+    display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+    -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
 }
 
-.header__top::after {
+/*.header__top::after {
     content: '';
     display: inline-block;
     width: 100%;
-}
+}*/
 
 .header__back {
     display: inline-block;
@@ -97,6 +110,7 @@ ul {
     font-size: 16px;
     color: #817f7d;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .header__back::before {
@@ -104,7 +118,7 @@ ul {
     position: absolute;
     left: 27px;
     top: 20px;
-    background: url(../img/arr-left.png) 0 0 no-repeat;
+    background: url(./img/arr-left.png) 0 0 no-repeat;
     width: 18px;
     height: 16px;
 }
@@ -126,6 +140,7 @@ ul {
     font-size: 21px;
     border-radius: 50px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .header__body {
@@ -154,7 +169,7 @@ ul {
     top: 15px;
     width: 29px;
     height: 29px;
-    background: url(../img/icon-r.png) 0 0 no-repeat;
+    background: url(./img/icon-r.png) 0 0 no-repeat;
 }
 
 .card-elka__item {
@@ -267,7 +282,7 @@ ul {
 .card-event {
     width: 325px;
     height: 325px;
-    background: url(../img/bg-event.png) 0 0 no-repeat;
+    background: url(./img/bg-event.png) 0 0 no-repeat;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -361,7 +376,7 @@ ul {
     top: 5px;
     width: 19px;
     height: 6px;
-    background: url(../img/icon-decor.png) 0 0 no-repeat;
+    background: url(./img/icon-decor.png) 0 0 no-repeat;
 }
 
 .card-event__price::after {
@@ -371,7 +386,7 @@ ul {
     top: 5px;
     width: 19px;
     height: 6px;
-    background: url(../img/icon-decor.png) -19px 0 no-repeat;
+    background: url(./img/icon-decor.png) -19px 0 no-repeat;
 }
 
 .card-event__date {
@@ -436,19 +451,19 @@ ul {
 .icon-date {
     width: 19px;
     height: 19px;
-    background: url(../img/icon-date.png) 0 0 no-repeat;
+    background: url(./img/icon-date.png) 0 0 no-repeat;
 }
 
 .icon-metro {
     width: 20px;
     height: 17px;
-    background: url(../img/icon-metro.png) 0 0 no-repeat;
+    background: url(./img/icon-metro.png) 0 0 no-repeat;
 }
 
 .icon-city {
     width: 12px;
     height: 20px;
-    background: url(../img/icon-city.png) 0 0 no-repeat;
+    background: url(./img/icon-city.png) 0 0 no-repeat;
 }
 
 
@@ -479,32 +494,38 @@ ul {
 .icon-calendar {
   width: 18px;
   height: 18px;
-  background: url(../img/icon-calendar.png) 0 0 no-repeat;
+  background: url(./img/icon-calendar.png) 0 0 no-repeat;
 }
 
 .icon-clock {
   width: 16px;
   height: 16px;
-  background: url(../img/icon-clock.png) 0 0 no-repeat;
+  background: url(./img/icon-clock.png) 0 0 no-repeat;
 }
 
 .icon-baby {
   width: 19px;
   height: 17px;
-  background: url(../img/icon-baby.png) 0 0 no-repeat;
+  background: url(./img/icon-baby.png) 0 0 no-repeat;
 }
 
 .icon-card {
   width: 18px;
   height: 18px;
-  background: url(../img/icon-card.png) 0 0 no-repeat;
+  background: url(./img/icon-card.png) 0 0 no-repeat;
 }
 
 
 
 @media screen and (max-width: 1700px) {
-    .events-bg {
-        display: none;
+   .bg-elka {
+        top: -11%;
+        left: -300px;
+    }
+
+    .bg-gingerbread {
+        top: 0;
+        right: -461px;
     }
 }
 
@@ -515,6 +536,45 @@ ul {
 
     .card-elka-line {
         margin: 8px 0;
+    }
+    .header__logo {
+      text-align: center;
+    }
+
+    .header__logo img {
+      width: 70%;
+      padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+  .events__list {
+    text-align: center;
+  }
+    .events__item {
+      width: auto;
+    }
+
+    .header__top {
+          padding: 25px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .mfp-ajax-holder .mfp-content, .mfp-inline-holder .mfp-content {
+    width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .header__body {
+        max-width: 640px;
+    }
+
+    .card-elka__item {
+        font-size: 15px;
     }
 }
 
@@ -781,12 +841,6 @@ ul {
   .c-counter__btn:hover {
     background-color: #9acc4e;
     color: #fff;
-  }
-
-
-  /**/
-  .datepicker-inline .datepicker {
-    border: none !important;
   }
 
 @-webkit-keyframes slide-down {
