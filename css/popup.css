@@ -116,6 +116,10 @@
   cursor: pointer;
 }
 
+lanel {
+  cursor: pointer;
+}
+
 .pay-card:last-child {
   margin-right: 0;
 }
