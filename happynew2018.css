@@ -265,7 +265,7 @@ ul {
 .bg-gingerbread {
     
     top: 50px;
-    left: 105%;
+    left: 100%;
 }
 
 .events__list {
@@ -558,20 +558,28 @@ ul {
     }
 
     .card-event {
-        width: 300px;height: 300px;
+        width: 280px;
+        height: 280px;
     }
 
     .layout {
-       max-width: 970px;
+       max-width: 900px;
     }
 
     .card-event__title {
-        padding: 0 53px;
+        padding: 0 44px;
+        font-size: 29px;
     }
 
     .events__item {
-    padding: 0 31px;
-}
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    .card-event__box {
+        width: 181px;
+        height: 181px;
+    }
 }
 
 @media screen and (max-width: 1120px) {
