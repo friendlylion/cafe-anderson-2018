@@ -249,18 +249,23 @@ ul {
     overflow: hidden;
 }
 
+.events .layout {
+    position: relative;
+}
+
 .events-bg {
     position: absolute;
 }
 
 .bg-elka {
-    top: -11%;
-    left: 0;
+    top: 0;
+    left: -355px;
 }
 
 .bg-gingerbread {
-    top: 0;
-    right: -11%;
+    
+    top: 50px;
+    left: 105%;
 }
 
 .events__list {
@@ -283,6 +288,8 @@ ul {
     width: 325px;
     height: 325px;
     background: url(./img/bg-event.png) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -298,10 +305,14 @@ ul {
     font-size: 16px;
     cursor: pointer;
     position: relative;
+    transition: all .1s ease;
 }
 
 .card-event:hover {
-    background-position: -325px 0;
+    background: url(./img/bg-event-hover.png) 0 0 no-repeat;
+    transition: all .1s ease;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .card-event:hover .card-event__box {
@@ -518,7 +529,7 @@ ul {
 
 
 @media screen and (max-width: 1700px) {
-   .bg-elka {
+   /*.bg-elka {
         top: -11%;
         left: -300px;
     }
@@ -526,7 +537,7 @@ ul {
     .bg-gingerbread {
         top: 0;
         right: -461px;
-    }
+    }*/
 }
 
 @media screen and (max-width: 1370px) {
@@ -545,6 +556,22 @@ ul {
       width: 70%;
       padding-top: 0;
     }
+
+    .card-event {
+        width: 300px;height: 300px;
+    }
+
+    .layout {
+       max-width: 970px;
+    }
+
+    .card-event__title {
+        padding: 0 53px;
+    }
+
+    .events__item {
+    padding: 0 31px;
+}
 }
 
 @media screen and (max-width: 1120px) {
