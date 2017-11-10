@@ -1,5 +1,7 @@
 $(function(){
 
+  $('#popup-event-tel').mask('+7(000)000-00-00');
+
 var $content = $('.filter__datepiker span');
 $('.datepicker-here').datepicker({
     minDate: new Date(),

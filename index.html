@@ -198,11 +198,11 @@
                                             <div class="popup-event-form__grid">
                                                 <div class="popup-event-form__item">
                                                 <label class="c-label" for="popup-event-user">ФИО: <span class="c-obligatory-field">*</span></label>
-                                                <input class="c-input" id="popup-event-user" name="popup-event-user" type="text">
+                                                <input class="c-input" id="popup-event-user" placeholder="Введите ФИО" name="popup-event-user" type="text">
                                             </div>
                                             <div class="popup-event-form__item">
                                                 <label class="c-label" for="popup-event-tel">Номер телефона: <span class="c-obligatory-field">*</span></label>
-                                                <input class="c-input" id="popup-event-tel" type="tel" name="popup-event-tel">
+                                                <input class="c-input" id="popup-event-tel" type="tel" placeholder="+7(***)***-**-**" name="popup-event-tel">
                                             </div>
                                             </div>
                                             <div class="popup-event-form__item">
@@ -314,9 +314,12 @@
     <!--задний фон модального окна-->
 
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAND9ubfxVl3HHDSrCdm9XIfxKkQnkyzR0&callback=initMap"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxMCSPiRWz2MdWdBDc0Bd0R-iNhFqriqc&callback=initMap"
+    async defer></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
 
+    <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/datepicker.min.js"></script>
     <script src="./js/map.js"></script>
     <script src="./js/happynew2018.js"></script>

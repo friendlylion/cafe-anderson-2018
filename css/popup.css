@@ -95,6 +95,7 @@
   background: url(../img/icon-pay-card.png) 0 0 no-repeat;
   position: relative;
   margin-left: 29px;
+  cursor: pointer;
 }
 
 .pay-mastercard {
@@ -104,6 +105,7 @@
   position: relative;
   margin-left: 29px;
   background: url(../img/icon-pay-card.png) -49px 0 no-repeat;
+  cursor: pointer;
 }
 
 .popup-event-form__item.pay {
