@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="happynew2018.css">
-    <link rel="stylesheet" href="popup.css">
+
+    <link href="./css/datepicker.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="./css/happynew2018.css">
+    <link rel="stylesheet" href="./css/popup.css">
   </head>
   <body>
     <div class="happynew2018">
@@ -49,7 +52,7 @@
             <a href="#" class="filter-btn filter__city">г. Москва <i class="icon icon-city"></i></a>
           </div>
           <div class="filter__right">
-            <a href="#" class="filter-btn filter__datepiker">Выберите дату <i class="icon icon-date"></i></a>
+            <a href="#" class="filter-btn filter__datepiker"><span>Выберите дату</span> <i class="icon icon-date"></i></a>
             <a href="#" class="filter-btn filter__metro">Выберите метро <i class="icon icon-metro"></i></a>
           </div>
         </div>
@@ -160,7 +163,7 @@
 
 
     <!-- модальные окна -->
-    <!--написать нам-->
+    <!--покупка билета-->
    <div class="mfp-wrap popup-event" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
         <div class="mfp-container mfp-inline-holder">
             <div class="mfp-content">
@@ -169,12 +172,15 @@
                     <div class="popup-body">
                         <div class="popup-title">Кулинарный МК "Пельмешки"</div>
                         <div class="popup-event-info">
-                            <div class="popup-event-info__item"></div>
+                            <div class="popup-event-info__item"><i class="icon icon-calendar"></i>10.11.17 г.</div>
+                            <div class="popup-event-info__item"><i class="icon icon-clock"></i>17:00</div>
+                            <div class="popup-event-info__item"><i class="icon icon-baby"></i>Возраст: 0+</div>
+                            <div class="popup-event-info__item"><i class="icon icon-card"></i>Стоимость: 0 руб.</div>
                         </div>
                         <div class="popup-event__address">Адрес: г.Москва, ул.Гиляровкого 39</div>
                         <div class="popup-event__box">
                             <div class="popup-event__item">
-                                <div class="popup-event__map"></div>
+                                <div class="popup-event__map" id="map"></div>
                             </div>
                             <div class="popup-event__item">
                                 <div class="popup-event-des">
@@ -207,14 +213,14 @@
                                               </div>
                                               <div class="popup-event-form__price">2 200 руб.</div>
                                             </div>
-                                            <div class="popup-event-form__item">
-                                              <div class="pay-card pay-visa">
+                                            <div class="popup-event-form__item pay">
+                                              <div class="pay-card">
+                                                <input class="c-radio" type="radio" id="pay-visa" name="card-pay-event" checked>
                                                 <label for="pay-visa" class="pay-visa"></label>
-                                                <input type="radio" id="pay-visa" name="card-pay-event">
                                               </div>
-                                              <div class="pay-card pay-mastercard">
-                                                <label for="pay-visa" class="pay-mastercard"></label>
-                                                <input type="radio" id="pay-mastercard" name="card-pay-event">
+                                              <div class="pay-card">
+                                                <input class="c-radio" type="radio" id="pay-mastercard" name="card-pay-event">
+                                                <label for="pay-mastercard" class="pay-mastercard"></label>
                                               </div>
                                             </div>
                                             <div class="popup-event-form__item"></div>
@@ -230,12 +236,88 @@
         </div>
     </div>
 
+    <!--город-->
+   <div class="mfp-wrap popup-city" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+        <div class="mfp-container mfp-inline-holder">
+            <div class="mfp-content">
+                <div class="popup">
+                  <div class="popup-close">[Х]</div>
+                    <div class="popup-body">
+                        <div class="popup-title">Выберите Ваш город</div>
+                        <div class="c-popup-list-layout">
+                          <ul class="c-popup-list">
+                            <li class="c-popup-list__item"><a href="#">Название города</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название города</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название города</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название города</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название города</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--станции-->
+   <div class="mfp-wrap popup-station" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+        <div class="mfp-container mfp-inline-holder">
+            <div class="mfp-content">
+                <div class="popup">
+                  <div class="popup-close">[Х]</div>
+                    <div class="popup-body">
+                        <div class="popup-title">Выберите станцию</div>
+                        <div class="c-popup-list-layout">
+                          <ul class="c-popup-list">
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                            <li class="c-popup-list__item"><a href="#">Название станции</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--станции-->
+   <div class="mfp-wrap popup-date" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+        <div class="mfp-container mfp-inline-holder">
+            <div class="mfp-content">
+                <div class="popup">
+                  <div class="popup-close">[Х]</div>
+                    <div class="popup-body">
+                        <div class="popup-title">Выберите дату</div>
+                        <div class="popup-date__text">Сегодня: 10 Ноябрь 2017</div>
+                        <div class="datepicker-here"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
      <div class="mfp-bg mfp-ready"></div>
     <!--задний фон модального окна-->
 
 
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAND9ubfxVl3HHDSrCdm9XIfxKkQnkyzR0&callback=initMap"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
-    <script src="happynew2018.js"></script>
+
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/happynew2018.js"></script>
   </body>
 </html>

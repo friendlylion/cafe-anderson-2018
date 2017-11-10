@@ -1,4 +1,16 @@
 $(function(){
+
+var $content = $('.filter__datepiker span');
+$('.datepicker-here').datepicker({
+    minDate: new Date(),
+    onSelect: function onSelect(fd, date) {
+
+        var title = fd;
+        $($content).html(title);
+        closePopupAuto('.popup-date');
+    }
+})
+
   /*функция показа модального окна*/
   function showPopup(icon, popup) {
       $(icon).on('click', function (e) {
@@ -13,7 +25,9 @@ $(function(){
       });
   }
 
-  $(".popup-close").click(function (e) {
+
+function closePopup(btnClose){
+  $(btnClose).click(function (e) {
       e.preventDefault();
       $(this).parents('.mfp-wrap').removeClass('is-visible');
       $('.mfp-bg').removeClass('is-visible');
@@ -22,7 +36,45 @@ $(function(){
           'margin-right':'0'
       });
   });
+}
+
+function closePopupAuto(popupClose){
+      $(popupClose).removeClass('is-visible');
+      $('.mfp-bg').removeClass('is-visible');
+      $('html').css({
+          'overflow':'auto',
+          'margin-right':'0'
+      });
+}
+
+closePopup('.popup-close');
+closePopup('.c-popup-list__item');
+
   showPopup(".card-event__box", '.popup-event');
+  showPopup(".filter__city", '.popup-city');
+  showPopup(".filter__metro", '.popup-station');
+  showPopup(".filter__datepiker", '.popup-date');
+
+
+// перестроение списка в две колонки при количестве пунктов более 5
+
+
+  function getColumn(list){
+    $(list).each(function(){
+      var $allCount = $(list).find('li').length;
+        if($allCount > 5){
+          $(list).addClass('c-popup-list__column');
+        }else{
+          $(list).removeClass('c-popup-list__column');
+        }
+    });
+  };
+
+  getColumn('.popup-city .c-popup-list');
+  getColumn('.popup-station .c-popup-list');
+
+  // клик по списку закрывает попап
+
 
 
   /*функция счета больше/меньше*/

@@ -1,0 +1,174 @@
+.popup-event .popup {
+    width: 1000px;
+}
+
+.popup-event-info {
+  margin-bottom: 12px;
+}
+
+.popup-event-info__item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.popup-event-info__item .icon {
+  display: inline-block;
+  margin-right: 5px !important;
+}
+
+.popup-event-info__item:last-child {
+  margin-right: 0;
+}
+
+.popup-event__address {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #414141;
+}
+
+.popup-event__box {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.popup-event-form__grid {
+    /*margin-bottom: 10px;*/
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+.popup-event-form__grid .popup-event-form__item {
+    width: 50%;
+    padding: 0 6px;
+}
+
+.popup-event__map {
+    width: 390px;
+    height: 613px;
+    background-color: #ccc;
+}
+.popup-event-des {
+    padding: 10px 0 28px 24px;
+}
+
+.popup-event-des__text {
+   font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.popup-event-ticket {
+
+}
+
+.c-radio {
+  display: none;
+}
+
+.pay-visa {
+  display: inline-block;
+  width: 49px;
+  height: 25px;
+  background: url(../img/icon-pay-card.png) 0 0 no-repeat;
+  position: relative;
+  margin-left: 29px;
+}
+
+.pay-mastercard {
+  display: inline-block;
+  width: 43px;
+  height: 25px;
+  position: relative;
+  margin-left: 29px;
+  background: url(../img/icon-pay-card.png) -49px 0 no-repeat;
+}
+
+.popup-event-form__item.pay {
+  margin-bottom: 40px;
+}
+
+.pay-card {
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.pay-card:last-child {
+  margin-right: 0;
+}
+
+.pay-card label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -29px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #cccccc;
+  border-radius: 22px;
+}
+
+.pay-card label::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -26px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 22px;
+}
+
+.c-radio:checked + label::after {
+  border-color: #9acc4e;
+  background-color: #9acc4e;
+}
+
+
+.popup-event-form__item {
+  margin-bottom: 10px;
+}
+
+.popup-event-form__price {
+  display: inline-block;
+  color: #9acc4e;
+  font-size: 60px;
+  margin-bottom: 10px;
+  font-family: 'SummerFont', sans-serif;
+}
+
+
+
+
+/*модальное выбора даты*/
+
+.popup-date .popup-title {
+margin-bottom: 0;
+}
+
+.popup-date__text {
+  margin-bottom: 10px;
+}

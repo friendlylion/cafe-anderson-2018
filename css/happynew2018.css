@@ -783,12 +783,6 @@ ul {
     color: #fff;
   }
 
-
-  /**/
-  .datepicker-inline .datepicker {
-    border: none !important;
-  }
-
 @-webkit-keyframes slide-down {
     0% {
         -webkit-transform: translateY(-100%);
