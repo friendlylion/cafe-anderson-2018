@@ -878,6 +878,13 @@ ul {
     color: #fff;
   }
 
+  .events__list-no {
+    padding: 40px 0;
+    font-size: 48px;
+    font-family: 'SummerFont', sans-serif;
+    text-align: center;
+  }
+
 @-webkit-keyframes slide-down {
     0% {
         -webkit-transform: translateY(-100%);
