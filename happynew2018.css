@@ -263,7 +263,7 @@ ul {
 }
 
 .bg-gingerbread {
-    
+
     top: 50px;
     left: 100%;
 }
@@ -357,7 +357,7 @@ ul {
 
 .card-event__content {
     text-align: center;
-    padding-top: 16px;
+    padding-top: 30px;
 }
 
 .card-event__title {
@@ -374,7 +374,7 @@ ul {
     display: inline-block;
     color: #99c506;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-transform: uppercase;
     position: relative;
     padding: 0 26px;
@@ -403,7 +403,6 @@ ul {
 .card-event__date {
     font-size: 14px;
     color: #808080;
-    margin-bottom: 4px;
 }
 
 .card-event__time {
@@ -905,4 +904,34 @@ ul {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
+}
+
+/*стили метро*/
+
+.label-metro {
+  display: inline-block;
+  vertical-align: middle;
+  width: 17px;
+  height: 17px;
+  border-radius: 17px;
+  margin-right: 5px;
+  position: relative;
+  top: -2px;
+  background-color: #1504ca;
+}
+
+.icon-metro-1 {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13px;
+  height: 8px;
+  background: url(./img/icon-metro.svg) 0 0 no-repeat;
+}
+
+.card-event__station {
+  font-size: 14px;
+  color: #808080;
+  margin-bottom: 4px;
 }
